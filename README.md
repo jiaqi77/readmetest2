@@ -61,7 +61,7 @@ The program is running in localhost:5000
 
 * **URL Params**
 
-`GET` **Required** `subject=[String]` ** OR ** `body=[String]`
+`GET` **Required** `subject=[String]` **OR** `body=[String]`
 
 * **Data Params**
 
@@ -102,10 +102,13 @@ Confidentiality Note: This message is intended only for the person or entity to 
 </SiebelMessage>
 ```
 
- **Success Response:**
+**Success Response:**
 
-  * **Code:** 200 <br />
-    **Content:** `<?xml version="1.0" encoding="UTF-8"?>
+* **Code:** 200 <br />
+
+**Content:** 
+```
+<?xml version="1.0" encoding="UTF-8"?>
 <SiebelMessage MessageId="1-I085" IntObjectName="GMvn Email Bucketing" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">
     <ListOfGmvnEmailBucketing>
         <Action>
@@ -115,7 +118,8 @@ Confidentiality Note: This message is intended only for the person or entity to 
             <SubType></SubType>
         </Action>
     </ListOfGmvnEmailBucketing>
-</SiebelMessage>`
+</SiebelMessage>
+```
 
 * **Error Response:**
 
