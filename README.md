@@ -69,7 +69,8 @@ The program is running in localhost:5000
 
 example of body
 
-```<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+```
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
  MessageId="1-I085"
  IntObjectName="GMvn Email Bucketing"
  MessageType="Integration Object"
@@ -98,7 +99,8 @@ Confidentiality Note: This message is intended only for the person or entity to 
 <SubType></SubType>
 </Action>
 </ListOfGmvnEmailBucketing>
-</SiebelMessage>```
+</SiebelMessage>
+```
 
  **Success Response:**
 
