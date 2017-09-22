@@ -67,59 +67,59 @@ The program is running in localhost:5000
 
 `POST` **Header** `Content-Type='text/xml'` 
 
-example of body
+ **example of body**
 
-```
-<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
- MessageId="1-I085"
- IntObjectName="GMvn Email Bucketing"
- MessageType="Integration Object"
- IntObjectFormat="Siebel Hierarchical"
-><ListOfGmvnEmailBucketing>
-<Action>
-<ActivityId>1-1F44EE</ActivityId>
-<Comment>
-Hello Support,
+ ```
+ <?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+  MessageId="1-I085"
+  IntObjectName="GMvn Email Bucketing"
+  MessageType="Integration Object"
+  IntObjectFormat="Siebel Hierarchical"
+ ><ListOfGmvnEmailBucketing>
+ <Action>
+ <ActivityId>1-1F44EE</ActivityId>
+ <Comment>
+ Hello Support,
 
- 
 
-Please look into my billing issue?
 
- 
+ Please look into my billing issue?
 
-Thanks,
 
-Ashish
 
-Nothing in this message is intended to constitute an electronic signature unless a specific statement to the contrary is included in this message.
+ Thanks,
 
-Confidentiality Note: This message is intended only for the person or entity to which it is addressed. It may contain confidential and/or privileged material. Any review, transmission, dissemination or other use, or taking of any action in reliance upon this
- message by persons or entities other than the intended recipient is prohibited and may be unlawful. If you received this message in error, please contact the sender and delete it from your computer.</Comment>
-<Objective></Objective>
-<SubType></SubType>
-</Action>
-</ListOfGmvnEmailBucketing>
-</SiebelMessage>
-```
+ Ashish
 
-**Success Response:**
+ Nothing in this message is intended to constitute an electronic signature unless a specific statement to the contrary is included in this message.
 
-* **Code:** 200 <br />
+ Confidentiality Note: This message is intended only for the person or entity to which it is addressed. It may contain confidential and/or privileged material. Any review, transmission, dissemination or other use, or taking of any action in reliance upon this
+  message by persons or entities other than the intended recipient is prohibited and may be unlawful. If you received this message in error, please contact the sender and delete it from your computer.</Comment>
+ <Objective></Objective>
+ <SubType></SubType>
+ </Action>
+ </ListOfGmvnEmailBucketing>
+ </SiebelMessage>
+ ```
 
-**Content:** 
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<SiebelMessage MessageId="1-I085" IntObjectName="GMvn Email Bucketing" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">
-    <ListOfGmvnEmailBucketing>
-        <Action>
-            <ActivityId>1-1F44EE</ActivityId>
-            <Comment>Hello Support, Please look into my billing issue? Thanks,AshishNothing in this message is intended to constitute an electronic signature unless a specific statement to the contrary is included in this message.Confidentiality Note: This message is intended only for the person or entity to which it is addressed. It may contain confidential and/or privileged material. Any review, transmission, dissemination or other use, or taking of any action in reliance upon this message by persons or entities other than the intended recipient is prohibited and may be unlawful. If you received this message in error, please contact the sender and delete it from your computer.</Comment>
-            <Objective>Billing</Objective>
-            <SubType></SubType>
-        </Action>
-    </ListOfGmvnEmailBucketing>
-</SiebelMessage>
-```
+* **Success Response:**
+
+  * **Code:** 200 <br />
+
+  **Content:** 
+ ```
+ <?xml version="1.0" encoding="UTF-8"?>
+ <SiebelMessage MessageId="1-I085" IntObjectName="GMvn Email Bucketing" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">
+     <ListOfGmvnEmailBucketing>
+         <Action>
+             <ActivityId>1-1F44EE</ActivityId>
+             <Comment>Hello Support, Please look into my billing issue? Thanks,AshishNothing in this message is intended to constitute an electronic signature unless a specific statement to the contrary is included in this message.Confidentiality Note: This message is intended only for the person or entity to which it is addressed. It may contain confidential and/or privileged material. Any review, transmission, dissemination or other use, or taking of any action in reliance upon this message by persons or entities other than the intended recipient is prohibited and may be unlawful. If you received this message in error, please contact the sender and delete it from your computer.</Comment>
+             <Objective>Billing</Objective>
+             <SubType></SubType>
+         </Action>
+     </ListOfGmvnEmailBucketing>
+ </SiebelMessage>
+ ```
 
 * **Error Response:**
 
