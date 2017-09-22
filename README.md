@@ -15,6 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 It requires Python 3 installed. Also install the certain python packages using pip
+
 nltk
 ```
 pip install nltk
@@ -24,21 +25,25 @@ You might have issue with proxy, try the next step
 pip install nltk --proxy http://10.81.68.10:8080
 ```
 test installation: ```Start>Python36```,then type ```import nltk```
+
 more instructions find http://www.nltk.org/ 
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Install flask
 
 ```
-Give the example
+pip install flask
 ```
+For batch process, it connects to oracle database (optional)
 
-And repeat
+```
+pip install cx_Oracle
+```
+install Oracle Instant Client
 
-```
-until finished
-```
+instructions can find http://cx-oracle.readthedocs.io/en/latest/installation.html
+
+Note: Python version, cx_Oracle and oracle instant Client should be in  the same windows redistributables (all 32 or 64)
+
 
 End with an example of getting some data out of the system or using it for a little demo
 
